@@ -14,3 +14,4 @@ The main focus was implementing CSS Grid for the first time in a project after l
 <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard" target="_blank" rel="noopener noreferrer">Take a look at the project assignment</a>
 
 ## Attribution
+<a href="https://pictogrammers.com/library/mdi/" target="_blank" rel="noopener noreferrer">Material Design Icons</a>
