@@ -10,17 +10,21 @@
   <header>
     <div class="nav">
       <div class="search-bar">
-
+        <form action="#" method="post">
+          <label for="search-field"><img src="" alt="Search Icon"></label>
+          <input type="text" id="search-field" name="search-field-input placeholder="Search">
+        </form>
       </div>
       <div class="user-area">
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><img src="" alt="Notification Icon"></li>
+          <li><img src="" alt="User Profile Image"></li>
+          <li><h3>Morgan Oakley</h3></li>
         </ul>
       </div>
-      <div class="user-greeating">
-
+      <div class="user-greeting">
+        <p>Hi there,</p>
+        <h2>Morgan Oakley (@morgan)</h2>
       </div>
       <div class="nav-options">
         <button class="nav-button">New</button>
@@ -29,28 +33,28 @@
       </div>
     </div>
   </header>
-  <main>
+  <aside>
     <div class="sidebar">
       <div class="logo">
         <div class="logo-icon"></div>
-        <h2>Dashboard</h2>
+        <h2 class="logo-text">Dashboard</h2>
       </div>
-      <div class="sidebar-options">
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-        <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
-      </div>
+      <ul class="sidebar-navigation sidebar-content-container">
+        <li class="sidebar-content"><a href=""><img src="" alt="Home Icon">Home</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Profile Icon">Profile</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Messages Icon">Messages</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="History Icon">History</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Tasks Icon">Tasks</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Communities Icon">Communities</a></li>
+      </ul>
+      <ul class="sidebar-options sidebar-content-container">
+        <li class="sidebar-content"><a href=""><img src="" alt="Settings Icon">Settings</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Support Icon">Support</a></li>
+        <li class="sidebar-content"><a href=""><img src="" alt="Privacy Icon">Privacy</a></li>
+      </ul>
     </div>
+  </aside>
+  <main>
     <div class="project-feed">
       <h3>Your Projects</h3>
       <div class="project-card">
@@ -113,29 +117,33 @@
           At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div class="trending-feed">
-        <div class="trending-card">
-          <div class="trending-card-icon"></div>
-          <h4 class="trening-card-user-tag">@tegan</h4>
-          <p></p>
-        </div>
-        <div class="trending-card">
-          <div class="trending-card-icon"></div>
-          <h4 class="trening-card-user-tag">@morgan</h4>
-          <p></p>
-        </div>
-        <div class="trending-card">
-          <div class="trending-card-icon"></div>
-          <h4 class="trening-card-user-tag">@kendall</h4>
-          <p></p>
-        </div>
-        <div class="trending-card">
-          <div class="trending-card-icon"></div>
-          <h4 class="trening-card-user-tag">@alex</h4>
-          <p></p>
-        </div>
+    </div>
+    <div class="trending-feed">
+      <h3>Trending</h3>
+      <div class="trending-card">
+        <div class="trending-card-icon"></div>
+        <h4 class="trening-card-user-tag">@tegan</h4>
+        <p></p>
+      </div>
+      <div class="trending-card">
+        <div class="trending-card-icon"></div>
+        <h4 class="trening-card-user-tag">@morgan</h4>
+        <p></p>
+      </div>
+      <div class="trending-card">
+        <div class="trending-card-icon"></div>
+        <h4 class="trening-card-user-tag">@kendall</h4>
+        <p></p>
+      </div>
+      <div class="trending-card">
+        <div class="trending-card-icon"></div>
+        <h4 class="trening-card-user-tag">@alex</h4>
+        <p></p>
       </div>
     </div>
   </main>
+  <footer>
+    Created by Muhamed Jonuzovic for<a href="https://theodinproject.com">The Odin Project</a>
+  </footer>
 </body>
 </html>
