@@ -58,8 +58,8 @@ main {
   grid-area: 2 / 2 / 3 / 3;
   background-color: #e1e8f0;
   display: grid;
-  grid-template: 1fr 1fr / 2.5fr 1fr;
-  gap: 10px;
+  grid-template: 1fr 3fr / 2.5fr 1fr;
+  gap: 20px;
 }
 
 /**************************************** 
@@ -70,7 +70,7 @@ main {
   padding-left: 10px;
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .search-bar {
@@ -131,9 +131,14 @@ main {
 }
 
 .profile-picture-icon {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border-radius: 5cap;
+}
+
+.profile-picture-icon:hover {
+  opacity: 0.75;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .user-greeting {
@@ -153,7 +158,7 @@ main {
 .nav-options {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -168,11 +173,11 @@ main {
   gap: 5px;
   background-color: #1892d3;
   border: 0;
-  border-radius: 1cap;
+  border-radius: 2cap;
   color: #ffffff;
   font-size: 1.25rem;
-  font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-button:hover {
@@ -246,24 +251,155 @@ main {
   width: 50px;
   height: 50px;
   color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /**************************************** 
     Project Feed - Layout & Styling
 *****************************************/
-.project-feed {
-  padding: 25px 0 0 25px;
+.project-feed-container {
   grid-area: 1 / 1 / 3 / 2;
+}
+
+.project-feed-title {
+  padding: 25px 0 0 25px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.project-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  gap: 10px;
+  padding: 20px 0 0 20px;
+}
+
+.project-card {
+  min-height: 300px;
+  background-color: #ffffff;
+  border-radius: 1cap;
   color: #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-columns: 1fr 70fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.project-card > h2 {
+  padding-left: 15px;
+  padding-top: 15px;
+  grid-area: 1 / 2 / 2 / 3;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.project-card > p {
+  padding-left: 15px;
+  padding-right: 15px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.card-menu {
+  grid-area: 3 / 2 / 4 / 3;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.feed-menu-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.card-color {
+  grid-area: 1 / 1 / 4 / 2;
+  background-color: #f9cc14;
+  border-radius: 1cap;
+}
+
+/**************************************** 
+    Announcement Feed - Layout & Styling
+*****************************************/
+.announcement-feed-container {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 25px 25px 0 0;
+  color: #000000;
+}
+
+.announcement-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 20px;
 }
 
 .announcement-feed {
-  padding-top: 25px;
-  grid-area: 1 / 2 / 2 / 3;  
+  background-color: #ffffff;
+  border-radius: 1cap;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.announcement-card {
   color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.announcement-card:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.announcement-card > h4 {
+  font-weight: bold;
+}
+
+/**************************************** 
+    Trending Feed - Layout & Styling
+*****************************************/
+.trending-feed-container {
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 25px 25px 0 0;  
+}
+
+.trending-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 10px;
 }
 
 .trending-feed {
-  grid-area: 2 / 2 / 3 / 3;
+  padding: 25px;
   color: #000000;
+  background-color: #ffffff;
+  border-radius: 1cap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trending-card > div > h4 {
+  font-weight: bold;
+}
+
+.trending-card {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-card:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.trending-card:hover {
+  opacity: 0.75;
+  color: rgba(0, 0, 0, 0.55);
 }
