@@ -9,7 +9,7 @@ The main focus was implementing CSS Grid for the first time in a project after l
 
 ## View the finished Admin Dashboard
 
-<a href="https://jonuzovic-muhamed.github.io/admin-dashboard" target="_blank" rel="noopener noreferrer">Take a look at the finished Sign Up Form project</a>
+<a href="https://jonuzovic-muhamed.github.io/admin-dashboard" target="_blank" rel="noopener noreferrer">Take a look at the finished Admin Dashboard project</a>
 
 <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard" target="_blank" rel="noopener noreferrer">Take a look at the project assignment</a>
 
